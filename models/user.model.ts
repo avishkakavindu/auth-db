@@ -38,7 +38,7 @@ export class User {
   @prop({ type: () => String, lowercase: true, required: true, unique: true })
   email: string;
 
-  @prop({ type: () => String, required: true })
+  @prop({ type: () => String, required: true, unique: true })
   username: string;
 
   @prop({ type: () => String, required: true, select: false })
